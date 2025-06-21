@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gestión de Pagos</title>
+</head>
+
+<body>
+    <h1>Registro de Pagos Mensuales</h1>
+    <div class="contenedor">
+        <form id="pagosForm">
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" required>
+            
+            <label for="monto">Monto:</label>
+            <input type="number" id="monto" required>
+
+            <label for="medioDePago">Medio de pago:</label>
+            <select id="medioDePago" required>
+                <option value="efectivo">Efectivo</option>
+                <option value="transferencia">Transferencia</option>
+                <option value="debito">Débito</option>
+                <option value="credito">Crédito</option>
+                <option value="ficha">Ficha</option>
+            </select>
+            <button type="submit">Agregar Pago</button>
+        </form>
+
+        <div class="resumenDePagos">
+            <h2>Pagos Registrados</h2>
+            <table id="tablaPagos">
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Monto</th>
+                        <th>Medio de Pago</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            
+        </div>
+
+        
+    </div>
+
+    <h2>Total por Categoría</h2>
+    <ul id="totalCategorias"></ul>
+    <h2 id="total">Total: $0</h2>
+    
+
+    <script src="script.js"></script>
+
+</body>
+</html>

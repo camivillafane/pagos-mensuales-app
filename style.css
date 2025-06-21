@@ -1,0 +1,113 @@
+/*colores
+mas oscuro #193e4e
+del mas claro a oscuro para botones etc 
+#d7e9f2 - hover #dfedf4
+#80b3ba - hover #99c2c7
+#2b7483 - hover #558f9b
+para texto #16537e
+https://www.color-hex.com/color-palette/1014735
+*/
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #d7e9f2;
+    margin: 0;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 10px;
+}
+.tituloApp {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 40px;
+    color: #16537e;
+}
+
+.menuApp {
+    margin-top: 15px;
+}
+
+.menuApp a {
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    background-color: #2b7483;
+    color: #ffffff;
+    padding: 10px;
+    max-width: 200px;
+    text-align: center;
+}
+
+.menuApp a:hover {
+    background-color: #558f9b;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #16537e;
+}
+
+.contenedor {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    
+}
+
+form {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 15px;
+    min-width: auto;
+    max-width: 500px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    font-weight: 500;
+}
+
+input, select, button {
+    width: 100px;
+    padding: 10px;
+    border: 1px solid #80b3ba;
+}
+
+button {
+    background-color: #2b7483;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #558f9b;
+}
+
+.resumenDePagos {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    min-width: auto;
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #80b3ba;
+    text-align: left;
+}
+
+ul, li {
+    margin: 5px 0;
+}
